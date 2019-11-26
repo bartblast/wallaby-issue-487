@@ -1,0 +1,6 @@
+<%= f = form_for @changeset, "#", [phx_submit: :save] %>
+  <%= label f, :email %>
+  <%= text_input f, :email %>
+  <%= error_tag f, :email %>
+  <%= submit "Sign up" %>
+</form> 
